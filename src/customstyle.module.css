@@ -1,0 +1,96 @@
+.imgstyle{
+  height: 200px;
+  width: 200px;
+  padding: 25px;
+  animation: bounce 0.5s;
+  animation: bounce 0.5s; 
+}
+
+@keyframes bounce { 
+from { 
+    transform: translate3d(0, 0, 0); 
+} 
+to { 
+    transform: translate3d(0, 200px, 0); 
+} 
+} 
+.common{
+  padding: 15px;
+}
+.main{
+  background-color: green;
+}
+.child{
+  color: white;
+}
+.main :last-child{
+  color: blue;
+}
+.class{
+  height: 50px;
+  width: 50px;
+  background-color: aliceblue;
+}
+.sidebar {
+    margin: 0;
+    position: relative;
+    overflow: auto;
+    height: inherit;
+    background-color: #54B689;
+    color: white;
+    /* animation: sidebarAnimate 2s infinite; */
+  }
+  
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar{
+    text-align: center;
+    float: none;
+  }
+}
+  .mainContent{
+    display: flex;
+
+  }
+  .skills{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .skills > aside > div >svg{
+   width: 100%;
+     
+  }
+  .skills >aside> div{
+    display: flex;
+  
+  }
+ 
+  .description{
+    padding: 4rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .head1{
+    display: flex;
+    justify-content: center;
+  }
+  @keyframes sidebarAnimate {
+    0%{
+      background-color: rgb(158, 207, 228);
+    }
+    25%{
+      background-color: rgb(106, 159, 181);
+    }
+    50%{
+      background-color: rgb(83, 128, 148);
+    }
+  }
